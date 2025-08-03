@@ -11,7 +11,7 @@ public class JaneiroSchoolController {
     
     @GetMapping("/webhook/studentAdded/{name}")
     public @ResponseBody String studentAdded(@PathVariable String name) {
-        System.out.println("Student name" + name);
+        System.out.println("Student name " + name);
         return " Webhook received successfully!";
     }
 }
